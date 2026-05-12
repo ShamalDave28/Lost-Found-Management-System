@@ -1,0 +1,4 @@
+CREATE DATABASE lost_found_db;
+USE lost_found_db;
+CREATE TABLE users(id INT AUTO_INCREMENT PRIMARY KEY,name VARCHAR(50),email VARCHAR(50),password VARCHAR(50));
+CREATE TABLE items(id INT AUTO_INCREMENT PRIMARY KEY,user_id INT,type VARCHAR(10),item_name VARCHAR(100),location VARCHAR(100),date DATE);
